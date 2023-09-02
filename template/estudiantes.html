@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de los Estudiantes</title>
+</head>
+<body>
+    <h1>Registro de los Estudiantes</h1>
+    <ul>
+        {% for estudiante in estudiantes %}
+            <li>Código de Identificación del Alumno: {{ estudiante.Id }} - Nombre Completo: {{ estudiante.nombre }} {{ estudiante.apellido }} (Edad: {{ estudiante.edad }} años)</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

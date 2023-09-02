@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de los Cursos</title>
+</head>
+<body>
+    <h1>Registro de los Cursos</h1>
+    <ul>
+        {% for curso in cursos %}
+            <li>Código del Curso: {{ curso.Id }} - Nombre del Curso: {{ curso.nombre_curso }} - Codigo de los Estudiantes Inscritos: {{ curso.id_estudiante }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
